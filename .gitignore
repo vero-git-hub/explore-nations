@@ -40,3 +40,49 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Angular specific
+/documentation/
+/docs/
+
+# Log files and error reports
+*.log
+*.stackdump
+
+# Temporary files
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+._*
+.fseventsd
+.com.apple.timemachine.donotpresent
+ehthumbs.db
+
+# CI/CD
+.gitlab-ci.yml
+
+# Tool-specific files
+.eslintcache
+.prettierrc
+.storybook/
+
+# Additional IDE configurations
+.atom/
+.nano/
+.vim/
+.swp
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build directories
+/build/
+/target/
+
+# Private or experimental configurations
+.firebase/
+.idea_modules/
