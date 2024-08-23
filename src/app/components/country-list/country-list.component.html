@@ -1,5 +1,6 @@
 <div class="container">
-  <div>
+  <div class="row align-items-center justify-content-between">
+    <div class="col-md-8">
       <mat-form-field appearance="outline" class="search-form">
         <mat-icon matPrefix>search</mat-icon>
         <mat-label>Search</mat-label>
@@ -9,7 +10,8 @@
                (input)="filterCountries()"
                placeholder="Search for a country...">
       </mat-form-field>
-    <div class="col-md-4 mb-4 text-end">
+    </div>
+    <div class="col-md-4 text-end">
       <select class="form-select" [(ngModel)]="selectedRegion" (change)="onRegionChange()">
         <option value="">Filter by Region</option>
         <option *ngFor="let region of regions" [value]="region">{{ region }}</option>
