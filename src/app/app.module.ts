@@ -5,6 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CountryListComponent } from './components/country-list/country-list.component';
 import { CountryDetailComponent } from './components/country-detail/country-detail.component';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -15,9 +21,16 @@ import { CountryDetailComponent } from './components/country-detail/country-deta
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    RouterModule,
+    MatInputModule,
+    MatIconModule,
+    MatFormFieldModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
